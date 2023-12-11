@@ -5,6 +5,10 @@ window.addEventListener('DOMContentLoaded', function () {
 	setTimeout(function () {
 		document.getElementById('loader').style.display = 'none';
 		document.getElementById("main").style.display = "block";
-	}, 8000);
+	}, 7000);
 });
+
+window.onload = () => {
+
+}
 
