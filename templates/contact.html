@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Rincón FrutiCola de Kike</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="/templates/contact.html">Contacto</a></li>
-                <li><a href="/templates/aboutUs.html">Acerca de Nosotros</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li class="logo">
+            <img src="/assets/imgs/logo.png" alt="Logo" class="logo" />
+          </li>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/templates/contact.html">Contacto</a></li>
+          <li><a href="/templates/aboutUs.html">Acerca de Nosotros</a></li>
+        </ul>
+        <button class="button-green-nav" role="button">Register/Log-In</button>
+      </nav>
     </header>
-
-    <section id="contacto">
+    <div class="centered">
+      <section id="contacto" class="contact-styles">
         <h2>Contacto</h2>
         <p>Puedes contactarnos en:</p>
         <address>
-            Correo Electrónico: <a href="mailto:info@fruteriadelicioso.com">info@fruteriadelicioso.com</a><br>
-            Teléfono: +123 456 789
+          Correo Electrónico:
+          <a href="mailto:info@fruteriadelicioso.com"
+            >info@fruteriadelicioso.com</a
+          ><br />
+          Teléfono: <span class="green">+123 456 789</span>
         </address>
-    </section>
-</body>
-
+      </section>
+    </div>
+  </body>
 </html>
