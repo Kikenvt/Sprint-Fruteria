@@ -372,7 +372,7 @@ nav li:hover {
 .carousel {
   max-width: 50%;
   height: 50vh;
-  margin: 0 auto;
+  margin: 30px auto;
   position: relative;
 }
 
