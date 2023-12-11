@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Fresh Fruit' ;
+    src: url(/assets/fonts/fresh_fruit/Fresh\ Fruit.otf);
+}
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -12,7 +16,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fresh Fruit', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     margin: 0;
@@ -21,6 +25,20 @@ body{
     height: 100%;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main";
+}
+
+.wrap1{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header" "content" "footer";
+}
 
 
 /*  Begin Loader  */
