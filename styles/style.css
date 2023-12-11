@@ -344,7 +344,7 @@ nav li:hover {
   text-decoration: underline rgb(33, 179, 30) .5rem;
 }
 
-/*  Begin help codes  */
+/*  Begin fast codes  */
 .size-2rem {
   font-size: 2rem;
 }
@@ -373,4 +373,4 @@ nav li:hover {
   align-items: center;
   justify-content: center;
 }
-/*  End help codes  */
+/*  End fast codes  */
