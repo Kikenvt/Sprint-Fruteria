@@ -1,54 +1,63 @@
 document.addEventListener("DOMContentLoaded", () =>{
     setTimeout(function () {
         document.getElementById('loader').style.display = 'none';
-    }, 5000);    
+    }, 4000);    
 });
 
-window.onload = function () {
+window.onload = () => {
     // Variables
     const images = [
-        'img/montanya.jpg',
-        'img/parque.jpg',
-        'img/palmeras.jpg'
+        '/assets/imgs/aguacate.jpg',
+        '/assets/imgs/apple.jpg',
+        '/assets/imgs/arandanos.jpg',
+        '/assets/imgs/kiwi.jpg',
+        '/assets/imgs/manzana.jpg',
+        '/assets/imgs/melon.jpg',
+        '/assets/imgs/naranja.jpg',
+        '/assets/imgs/piña.jpg',
+        '/assets/imgs/kiwis.jpg',
+        '/assets/imgs/naranja.jpg',
+        '/assets/imgs/uvas.jpg',
     ];
 
     const timeInterval = 1000;
     let currentPosition = 0;
-    let backButton = document.querySelector('#retroceder');
-    let advanceButton = document.querySelector('#avanzar');
-    let img = document.querySelector('#imagen');
-    let playButton = document.querySelector('#play');
-    let stopButton = document.querySelector('#stop');
+    let backButton = document.getElementById('backward');
+    let advanceButton = document.getElementById('forward');
+    let imgContainer = document.getElementById('images');
+    let playButton = document.getElementById('play');
+    let stopButton = document.getElementById('stop');
     let interval;
 
     // Función para pasar fotos
-    function pasarFoto() {
+    function nextImage() {
         if(currentPosition >= images.length - 1) {
             currentPosition = 0;
         } else {
             currentPosition++;
         }
-        renderizarImagen();
+        showImage();
     }
 
     // Función para retroceder foto
-    function retrocederFoto() {
+    function previousImage() {
         if(currentPosition <= 0) {
             currentPosition = images.length - 1;
         } else {
             currentPosition--;
         }
-        renderizarImagen();
+        showImage();
     }
 
     // Función que actualiza la imagen dependiendo de posiciónActual
-    function renderizarImagen () {
-        img.style.backgroundImage = `url(${images[currentPosition]})`;
+    function showImage () {
+        imgContainer.style.backgroundImage = `url(${images[currentPosition]})`;
+        console.log('Displaying image:', images[currentPosition]);
     }
 
     // Activar autoplay
-    function playIntervalo() {
-        interval = setInterval(pasarFoto, timeInterval);
+    function playInterval() {
+        interval = setInterval(nextImage, timeInterval);
         // Desactivamos los botones de control
         advanceButton.setAttribute('disabled', true);
         backButton.setAttribute('disabled', true);
@@ -57,7 +66,7 @@ window.onload = function () {
 
     }
 
-    function stopIntervalo() {
+    function stopInterval() {
         clearInterval(interval);
         // Activamos los botones de control
         advanceButton.removeAttribute('disabled');
@@ -67,10 +76,10 @@ window.onload = function () {
     }
 
     // Eventos
-    advanceButton.addEventListener('click', pasarFoto);
-    backButton.addEventListener('click', retrocederFoto);
-    playButton.addEventListener('click', playIntervalo);
-    stopButton.addEventListener('click', stopIntervalo);
+    advanceButton.addEventListener('click', nextImage);
+    backButton.addEventListener('click', previousImage);
+    playButton.addEventListener('click', playInterval);
+    stopButton.addEventListener('click', stopInterval);
     // Iniciar
-    renderizarImagen();
+    showImage();
 }

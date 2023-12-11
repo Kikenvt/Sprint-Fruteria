@@ -6,11 +6,12 @@
     <title>Rincón FrutiCola de Kike</title>
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
 
   <body>
     <!-- Loader -->
-    <!--<div id="loader" class="loader">
+    <div id="loader" class="loader">
       <div class="loader-container">
         <div class="wheel"></div>
       </div>
@@ -20,7 +21,7 @@
           Por favor paciencia, todavía no tenemos fibra Digi
         </p>
       </div>
-    </div> -->
+    </div>
 
     <!-- Page-->
     <header>
@@ -102,18 +103,18 @@
       </section>
     </div>
     <h2 class="align-center margin-bot-1rem green">Nuestros Productos</h2>
-    <div class="wrapper2">
-        
-        <div class="wrap01">
-          <img src="/assets/imgs/apples.jpg" alt="Manzanas" class="fruits"/>
-        </div>
-        <div class="wrap02">
-          <img src="/assets/imgs/banana.jpg" alt="Plátanos" class="fruits"/>
-        </div>
-        <div class="wrap03">
-          <img src="/assets/imgs/berries.jpg" alt="Uvas" class="fruits"/>
-        </div>
-    </div>
+    
+      <!--Carrusel imágenes-->
+      <div class="carousel">
+        <button id="backward" class="carousel-btn"><i class="fa-solid fa-arrow-left fa-lg" style="color: #6f7276;"></i></button>
+        <div id="images" class="image-container"></div>
+        <button id="forward" class="carousel-btn"><i class="fa-solid fa-arrow-right fa-lg" style="color: #6f7276;"></i></button>
+      </div>
+      <div class="controls">
+        <button id="play"><i class="fa-solid fa-play fa-lg" style="color: #6f7276;"></i></button>
+        <button id="stop" disabled><i class="fa-solid fa-pause fa-lg" style="color: #6f7276;"></i></button>
+      </div>
+      
     <script src="./scripts/main.js"></script>
   </body>
 </html>
