@@ -10,3 +10,47 @@ html{
 *::after{
     box-sizing: inherit;
 }
+
+
+
+
+
+
+
+.loader{  
+    margin: 30rem auto;
+    text-align: center;
+    height: 100vh;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message{ 
+    position: relative; 
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.08em;
+}
+      
+.wheel {
+    border: 5px solid green;
+    border-radius: 50%;
+    border-left-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    animation: spin 1s linear infinite;   
+    text-align: center;
+}
+      
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+      
+    100% {
+        transform: rotate(360deg);
+    }
+}
