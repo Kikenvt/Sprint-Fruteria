@@ -3,3 +3,4 @@ window.addEventListener('DOMContentLoaded', function () {
 		document.getElementById('loader').style.display = 'none';
 	}, 9000);
 });
+
