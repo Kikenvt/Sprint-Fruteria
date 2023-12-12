@@ -20,5 +20,6 @@ jobs:
             cd /var/www/
             sudo rm -rf html
             sudo mkdir html
+            cd html
             sudo git clone https://github.com/Kikenvt/Sprint-Fruteria .
             sudo systemctl restart nginx 
