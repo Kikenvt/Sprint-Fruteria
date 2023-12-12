@@ -414,3 +414,12 @@ nav li:hover {
   padding: 1rem 1.5rem;
   cursor: pointer;
 }
+
+.elevator{
+  border:none;
+  border-radius: 4px;
+  padding: 1.5rem;
+  right: 3rem;
+  position:absolute;
+  cursor: pointer;
+}
