@@ -217,6 +217,56 @@ p {
   margin: 5px;
 }
 
+/* Footer*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(33, 179, 30);
+  color: white;
+  height: 25rem;
+  width: 100%;
+  text-align: center;
+}
+
+.f1{
+  width: 20rem;
+  height: 20rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+.f2{
+  width: 20rem;
+  height: 20rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+.f3{
+  width: 20rem;
+  height: 20rem;
+  margin-right: 10rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+.f4{
+  width: 15rem;
+  height: 15rem;
+}
+
+.logoF {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
 /* Begin Contact page*/
 .contact-styles {
   display: flex;
